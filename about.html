@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About Sean Vargas — My Legacy Management | Oceanside CA</title>
+<meta name="description" content="Sean Vargas is a California-licensed independent insurance agent (License #0M17715) specializing in Medicare, estate planning, and life insurance for Southern California families.">
+<link rel="canonical" href="https://mylegacymanagement.com/about.html">
+<meta property="og:title" content="About Sean Vargas — My Legacy Management">
+<meta property="og:description" content="Licensed CA insurance agent helping Southern California families protect their legacy since 2019.">
+<meta property="og:url" content="https://mylegacymanagement.com/about.html">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0a1628;--bg2:#111f36;--accent:#c9a84c;--text:#f0f0f0;--muted:#8a8a8a;--font:'Inter',system-ui,sans-serif;--serif:'Playfair Display',Georgia,serif}
+html{scroll-behavior:smooth;font-size:16px}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--accent);text-decoration:none;transition:all .3s ease}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}
+.reveal.vis{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 0;transition:all .5s;background:rgba(10,22,40,.92);backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.04)}
+.nav-inner{max-width:1400px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem);display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--text);letter-spacing:-.02em}
+.logo em{color:var(--accent);font-style:normal}
+.nav-links{display:flex;gap:clamp(1rem,2.5vw,2rem);align-items:center}
+.nav-links a{color:rgba(240,240,240,.5);font-size:.82rem;font-weight:500;letter-spacing:.03em;transition:color .3s}
+.nav-links a:hover,.nav-links a.active{color:var(--text)}
+.btn-nav{padding:.55rem 1.6rem;border-radius:100px;background:var(--accent);color:#fff!important;font-weight:600;font-size:.8rem}
+.btn-nav:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,168,76,.35)}
+.menu-btn{display:none;background:none;border:none;color:var(--text);font-size:1.5rem;cursor:pointer;padding:.25rem}
+@media(max-width:900px){.menu-btn{display:block}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(10,22,40,.97);backdrop-filter:blur(20px);padding:2rem clamp(1.5rem,4vw,3rem);gap:1.5rem;border-bottom:1px solid rgba(255,255,255,.04)}.nav-links.open{display:flex}}
+.wrap{max-width:1400px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}
+.wrap-narrow{max-width:860px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}
+
+.page-hero{padding:clamp(8rem,16vh,12rem) 0 clamp(4rem,8vh,6rem);position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(201,168,76,.05) 0%,transparent 60%);pointer-events:none}
+.page-label{font-size:.65rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.page-title{font-family:var(--serif);font-size:clamp(2.8rem,7vw,5.5rem);font-weight:700;line-height:1.05;letter-spacing:-.04em;margin-bottom:1.2rem}
+.page-title em{color:var(--accent);font-style:italic}
+.page-sub{color:var(--muted);font-size:clamp(1rem,2vw,1.2rem);max-width:560px;line-height:1.85}
+
+.sec{padding:clamp(4rem,10vh,7rem) 0;position:relative}
+.sec-label{font-size:.65rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.sec-title{font-family:var(--serif);font-size:clamp(1.8rem,4vw,3rem);font-weight:700;line-height:1.1;letter-spacing:-.03em;margin-bottom:1.4rem}
+.sec-title em{color:var(--accent);font-style:italic}
+.divider{width:48px;height:2px;background:var(--accent);margin-bottom:1.8rem;border-radius:2px}
+.hr{border:none;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.12),transparent);margin:0}
+
+.bio-card{background:rgba(201,168,76,.03);border:1px solid rgba(201,168,76,.1);border-radius:16px;padding:clamp(2rem,4vw,3.5rem);margin-bottom:3rem}
+.bio-text{font-size:clamp(.95rem,1.5vw,1.05rem);color:rgba(240,240,240,.7);line-height:1.9}
+.bio-text p{margin-bottom:1.4rem}
+.bio-text p:last-child{margin-bottom:0}
+
+.value-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:2rem}
+@media(min-width:640px){.value-grid{grid-template-columns:repeat(2,1fr)}}
+.value-card{padding:1.8rem;border:1px solid rgba(255,255,255,.05);border-radius:12px;transition:border-color .3s,background .3s}
+.value-card:hover{border-color:rgba(201,168,76,.2);background:rgba(201,168,76,.03)}
+.value-icon{font-size:1.6rem;margin-bottom:.8rem}
+.value-card h3{font-size:1rem;font-weight:600;margin-bottom:.4rem}
+.value-card p{font-size:.88rem;color:var(--muted);line-height:1.75}
+
+.cred-block{background:rgba(201,168,76,.04);border:1px solid rgba(201,168,76,.12);border-radius:12px;padding:2rem;margin-top:2rem}
+.cred-block h3{font-size:.95rem;font-weight:600;margin-bottom:1rem;color:var(--accent)}
+.cred-list{list-style:none;display:flex;flex-direction:column;gap:.7rem}
+.cred-list li{display:flex;align-items:flex-start;gap:.7rem;font-size:.88rem;color:rgba(240,240,240,.65)}
+.cred-list li::before{content:'&#10003;';color:var(--accent);font-weight:700;flex-shrink:0;margin-top:.1rem}
+
+.cta-bar{background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.12);border-radius:16px;padding:clamp(2rem,4vw,3rem);text-align:center;margin-top:3rem}
+.cta-bar h2{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;margin-bottom:.8rem}
+.cta-bar h2 em{color:var(--accent);font-style:italic}
+.cta-bar p{color:var(--muted);font-size:.92rem;margin-bottom:1.8rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 2.2rem;border-radius:100px;font-weight:600;font-size:.88rem;transition:all .4s cubic-bezier(.22,1,.36,1);text-decoration:none}
+.btn-p{background:var(--accent);color:#fff;box-shadow:0 4px 20px rgba(201,168,76,.25)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 12px 35px rgba(201,168,76,.4);color:#fff}
+.btn-o{border:1.5px solid rgba(201,168,76,.4);color:var(--accent);background:transparent;margin-left:.8rem}
+.btn-o:hover{background:rgba(201,168,76,.08);border-color:var(--accent)}
+
+footer{padding:3rem 0;border-top:1px solid rgba(255,255,255,.04);font-size:.8rem;color:var(--muted)}
+footer .wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:.55rem}
+.foot-logo{font-family:var(--serif);font-weight:700;font-size:1.15rem;color:var(--text);margin-bottom:.25rem}
+.foot-links{display:flex;gap:1.8rem;justify-content:center;flex-wrap:wrap;margin-top:.3rem}
+.foot-links a{color:var(--muted);transition:color .3s}
+.foot-links a:hover{color:var(--accent)}
+.foot-lic{font-size:.7rem;opacity:.4;margin-top:.5rem;line-height:1.6;max-width:600px}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.014;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">My Legacy <em>Management</em></a>
+    <button class="menu-btn" aria-label="Menu">&#9776;</button>
+    <div class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="about.html" class="active">About</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://links.seanvargas.com" class="btn-nav" target="_blank" rel="noopener">Book a Call</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="wrap-narrow">
+    <p class="page-label reveal">About</p>
+    <h1 class="page-title reveal d1">Built on trust.<br><em>Driven by purpose.</em></h1>
+    <p class="page-sub reveal d2">Sean Vargas founded My Legacy Management to give Southern California families an honest, independent guide through life's most important financial decisions.</p>
+  </div>
+</section>
+
+<hr class="hr">
+
+<section class="sec">
+  <div class="wrap-narrow">
+    <div class="divider reveal"></div>
+    <p class="sec-label reveal">Sean's Story</p>
+    <h2 class="sec-title reveal">Why <em>legacy?</em></h2>
+    <div class="bio-card reveal d1">
+      <div class="bio-text">
+        <p>Sean Vargas grew up watching families around him navigate some of the hardest moments of their lives — a parent's illness, a spouse's sudden passing, an estate left in probate for years. What struck him wasn't just the grief. It was the confusion. The lack of preparation. The sense that no one had ever sat down with these families and explained what they had, what they were missing, and what they could do about it.</p>
+        <p>That gap became his mission. After becoming a licensed insurance agent in California, Sean built My Legacy Management from the ground up as an independent agency — not tied to any single carrier, not driven by quotas, not incentivized to push any particular product. Just an honest partner who shops the whole market on your behalf and explains every option in plain language.</p>
+        <p>Based in Oceanside, California, Sean has helped hundreds of families across San Diego, Orange, and Riverside Counties find the right Medicare coverage, establish final expense plans, structure life insurance for estate planning, and build retirement income they can't outlive. He works alongside clients' attorneys and CPAs to make sure the insurance layer supports the full picture.</p>
+        <p>When he's not working with clients, Sean is active in his local community — because legacy isn't just a financial term. It's what you leave behind in the people around you.</p>
+      </div>
+    </div>
+
+    <div class="cred-block reveal">
+      <h3>Credentials &amp; Qualifications</h3>
+      <ul class="cred-list">
+        <li>California Insurance License #0M17715</li>
+        <li>Independent agent — contracted with 15+ major carriers</li>
+        <li>Medicare Advantage, Medicare Supplement &amp; Part D specialist</li>
+        <li>Life insurance: term, whole life, final expense, IUL</li>
+        <li>Annuity and retirement income strategies</li>
+        <li>Active member of the National Association of Benefits and Insurance Professionals (NABIP)</li>
+        <li>Serving San Diego, Orange &amp; Riverside Counties since 2019</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr class="hr">
+
+<section class="sec">
+  <div class="wrap-narrow">
+    <div class="divider reveal"></div>
+    <p class="sec-label reveal">Core Values</p>
+    <h2 class="sec-title reveal">What we <em>stand for</em></h2>
+    <div class="value-grid">
+      <div class="value-card reveal">
+        <div class="value-icon">&#128274;</div>
+        <h3>Independence</h3>
+        <p>We're not captive agents. We shop your profile across all our carrier partners to find the best fit — not the one that pays us the most.</p>
+      </div>
+      <div class="value-card reveal d1">
+        <div class="value-icon">&#128483;</div>
+        <h3>Transparency</h3>
+        <p>We explain every option, every trade-off, and every dollar. No fine print surprises. No pressure tactics. No unanswered questions.</p>
+      </div>
+      <div class="value-card reveal d2">
+        <div class="value-icon">&#128101;</div>
+        <h3>Family First</h3>
+        <p>We treat every client the way we'd treat our own family. That means giving you our honest recommendation, even when a simpler option would earn us less.</p>
+      </div>
+      <div class="value-card reveal d3">
+        <div class="value-icon">&#128197;</div>
+        <h3>Long-Term Relationship</h3>
+        <p>We don't disappear after enrollment. Annual reviews, plan changes, questions at 8pm — we're in your corner for the long haul.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="hr">
+
+<section class="sec">
+  <div class="wrap-narrow">
+    <div class="cta-bar reveal">
+      <h2>Ready to meet <em>Sean?</em></h2>
+      <p>Schedule a free, no-obligation consultation. We'll listen first, then build a plan that fits.</p>
+      <div>
+        <a href="https://links.seanvargas.com" class="btn btn-p" target="_blank" rel="noopener">Book Your Free Call &rarr;</a>
+        <a href="contact.html" class="btn btn-o">Send a message</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-logo">My Legacy Management</div>
+    <div>3186 Vista Way, Suite 312 &middot; Oceanside, CA 92056</div>
+    <div><a href="tel:+18587643873">(858) 764-3873</a> &middot; <a href="mailto:info@mylegacymanagement.com">info@mylegacymanagement.com</a></div>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+    <div class="foot-lic">&copy; 2026 My Legacy Management &mdash; Sean Vargas, CA Insurance License #0M17715<br>
+    Serving San Diego, Orange &amp; Riverside Counties &middot; Not affiliated with Medicare or any government agency.</div>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(e => {
+  e.forEach(x => { if(x.isIntersecting){ x.target.classList.add('vis'); obs.unobserve(x.target) }})
+}, { threshold: .08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(e => obs.observe(e));
+document.querySelector('.menu-btn')?.addEventListener('click', () => document.querySelector('.nav-links')?.classList.toggle('open'));
+</script>
+</body>
+</html>

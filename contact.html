@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — My Legacy Management | Oceanside CA</title>
+<meta name="description" content="Contact Sean Vargas at My Legacy Management. Call (858) 764-3873, email info@mylegacymanagement.com, or book a free consultation online. Serving San Diego, Orange &amp; Riverside County.">
+<link rel="canonical" href="https://mylegacymanagement.com/contact.html">
+<meta property="og:title" content="Contact — My Legacy Management">
+<meta property="og:description" content="Book a free consultation with Sean Vargas. No obligation, no pressure.">
+<meta property="og:url" content="https://mylegacymanagement.com/contact.html">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0a1628;--bg2:#111f36;--accent:#c9a84c;--text:#f0f0f0;--muted:#8a8a8a;--font:'Inter',system-ui,sans-serif;--serif:'Playfair Display',Georgia,serif}
+html{scroll-behavior:smooth;font-size:16px}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--accent);text-decoration:none;transition:all .3s ease}
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}
+.reveal.vis{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 0;background:rgba(10,22,40,.92);backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.04)}
+.nav-inner{max-width:1400px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem);display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--text);letter-spacing:-.02em}
+.logo em{color:var(--accent);font-style:normal}
+.nav-links{display:flex;gap:clamp(1rem,2.5vw,2rem);align-items:center}
+.nav-links a{color:rgba(240,240,240,.5);font-size:.82rem;font-weight:500;letter-spacing:.03em;transition:color .3s}
+.nav-links a:hover,.nav-links a.active{color:var(--text)}
+.btn-nav{padding:.55rem 1.6rem;border-radius:100px;background:var(--accent);color:#fff!important;font-weight:600;font-size:.8rem}
+.btn-nav:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,168,76,.35)}
+.menu-btn{display:none;background:none;border:none;color:var(--text);font-size:1.5rem;cursor:pointer;padding:.25rem}
+@media(max-width:900px){.menu-btn{display:block}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(10,22,40,.97);backdrop-filter:blur(20px);padding:2rem clamp(1.5rem,4vw,3rem);gap:1.5rem;border-bottom:1px solid rgba(255,255,255,.04)}.nav-links.open{display:flex}}
+.wrap{max-width:1400px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}
+.wrap-narrow{max-width:860px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}
+
+.page-hero{padding:clamp(8rem,16vh,12rem) 0 clamp(4rem,8vh,6rem);position:relative}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(201,168,76,.05) 0%,transparent 60%);pointer-events:none}
+.page-label{font-size:.65rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.page-title{font-family:var(--serif);font-size:clamp(2.8rem,7vw,5.5rem);font-weight:700;line-height:1.05;letter-spacing:-.04em;margin-bottom:1.2rem}
+.page-title em{color:var(--accent);font-style:italic}
+.page-sub{color:var(--muted);font-size:clamp(1rem,2vw,1.2rem);max-width:540px;line-height:1.85}
+
+.hr{border:none;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.12),transparent);margin:0}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:3rem;padding:clamp(4rem,8vh,6rem) 0}
+@media(min-width:768px){.contact-grid{grid-template-columns:1fr 1fr}}
+
+/* CONTACT METHODS */
+.contact-methods{display:flex;flex-direction:column;gap:1.5rem}
+.contact-card{padding:1.8rem;border:1px solid rgba(255,255,255,.06);border-radius:14px;transition:border-color .3s,background .3s;display:flex;gap:1.2rem;align-items:flex-start}
+.contact-card:hover{border-color:rgba(201,168,76,.2);background:rgba(201,168,76,.03)}
+.contact-icon{font-size:1.5rem;flex-shrink:0;margin-top:.1rem}
+.contact-card h3{font-size:.95rem;font-weight:600;margin-bottom:.3rem}
+.contact-card p,.contact-card a{font-size:.88rem;color:var(--muted);line-height:1.7}
+.contact-card a:hover{color:var(--accent)}
+.contact-card .primary-link{font-size:1rem;font-weight:600;color:var(--text);display:block;margin-bottom:.2rem}
+.contact-card .primary-link:hover{color:var(--accent)}
+
+/* FORM */
+.form-wrap{background:rgba(201,168,76,.03);border:1px solid rgba(201,168,76,.1);border-radius:16px;padding:clamp(2rem,4vw,3rem)}
+.form-wrap h2{font-family:var(--serif);font-size:1.6rem;font-weight:700;margin-bottom:.5rem}
+.form-wrap h2 em{color:var(--accent);font-style:italic}
+.form-wrap p{font-size:.88rem;color:var(--muted);margin-bottom:1.8rem}
+.form-group{margin-bottom:1.3rem}
+.form-group label{display:block;font-size:.82rem;font-weight:600;margin-bottom:.4rem;color:rgba(240,240,240,.7);letter-spacing:.02em}
+.form-group input,.form-group select,.form-group textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:.75rem 1rem;color:var(--text);font-family:var(--font);font-size:.9rem;transition:border-color .3s,box-shadow .3s;outline:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:rgba(201,168,76,.5);box-shadow:0 0 0 3px rgba(201,168,76,.08)}
+.form-group textarea{resize:vertical;min-height:110px}
+.form-group select option{background:#0a1628}
+.submit-btn{width:100%;background:var(--accent);color:#fff;border:none;border-radius:100px;padding:1rem;font-family:var(--font);font-size:.95rem;font-weight:600;cursor:pointer;transition:all .4s cubic-bezier(.22,1,.36,1);margin-top:.5rem}
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,168,76,.35)}
+.form-note{font-size:.72rem;color:var(--muted);text-align:center;margin-top:1rem;opacity:.6}
+.success-msg{display:none;padding:1.2rem;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:8px;text-align:center;font-size:.9rem;color:rgba(240,240,240,.8);margin-top:1rem}
+
+footer{padding:3rem 0;border-top:1px solid rgba(255,255,255,.04);font-size:.8rem;color:var(--muted)}
+footer .wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:.55rem}
+.foot-logo{font-family:var(--serif);font-weight:700;font-size:1.15rem;color:var(--text);margin-bottom:.25rem}
+.foot-links{display:flex;gap:1.8rem;justify-content:center;flex-wrap:wrap;margin-top:.3rem}
+.foot-links a{color:var(--muted);transition:color .3s}
+.foot-links a:hover{color:var(--accent)}
+.foot-lic{font-size:.7rem;opacity:.4;margin-top:.5rem;line-height:1.6;max-width:600px}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.014;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">My Legacy <em>Management</em></a>
+    <button class="menu-btn" aria-label="Menu">&#9776;</button>
+    <div class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="https://links.seanvargas.com" class="btn-nav" target="_blank" rel="noopener">Book a Call</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="wrap-narrow">
+    <p class="page-label reveal">Get in Touch</p>
+    <h1 class="page-title reveal d1">Let's start the<br><em>conversation.</em></h1>
+    <p class="page-sub reveal d2">No obligation. No pressure. Pick the method that works for you — call, email, or fill out the form below and Sean will reach out within one business day.</p>
+  </div>
+</section>
+
+<hr class="hr">
+
+<div class="wrap-narrow">
+  <div class="contact-grid">
+
+    <div class="contact-methods">
+      <div class="contact-card reveal">
+        <div class="contact-icon">&#128222;</div>
+        <div>
+          <h3>Call or Text</h3>
+          <a href="tel:+18587643873" class="primary-link">(858) 764-3873</a>
+          <p>Available Mon–Fri, 9 AM – 6 PM PT.<br>Evenings and weekends by appointment.</p>
+        </div>
+      </div>
+      <div class="contact-card reveal d1">
+        <div class="contact-icon">&#128140;</div>
+        <div>
+          <h3>Email</h3>
+          <a href="mailto:info@mylegacymanagement.com" class="primary-link">info@mylegacymanagement.com</a>
+          <p>Typical response within a few hours during business days.</p>
+        </div>
+      </div>
+      <div class="contact-card reveal d2">
+        <div class="contact-icon">&#128197;</div>
+        <div>
+          <h3>Book Online</h3>
+          <a href="https://links.seanvargas.com" class="primary-link" target="_blank" rel="noopener">Schedule a Free Call &rarr;</a>
+          <p>Choose a time that works for you. 30-minute consultations available 6 days a week.</p>
+        </div>
+      </div>
+      <div class="contact-card reveal d3">
+        <div class="contact-icon">&#128205;</div>
+        <div>
+          <h3>Office</h3>
+          <p class="primary-link" style="color:var(--text)">3186 Vista Way, Suite 312<br>Oceanside, CA 92056</p>
+          <p>In-person meetings available by appointment.<br>Serving San Diego, Orange &amp; Riverside Counties.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-wrap reveal d1">
+      <h2>Send a <em>message</em></h2>
+      <p>Tell us a bit about what you're looking for and we'll reach out to schedule a conversation.</p>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required autocomplete="name" placeholder="Jane Smith">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="(619) 555-0100">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="jane@example.com">
+        </div>
+        <div class="form-group">
+          <label for="interest">What are you interested in?</label>
+          <select id="interest" name="interest">
+            <option value="">— Select a topic —</option>
+            <option>Medicare enrollment or review</option>
+            <option>Life insurance / final expense</option>
+            <option>Estate planning strategies</option>
+            <option>Tax-free retirement income (IUL)</option>
+            <option>Asset protection</option>
+            <option>General consultation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Questions or comments</label>
+          <textarea id="message" name="message" placeholder="Tell me a bit about your situation..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+        <p class="form-note">Your information is never sold or shared with third parties.</p>
+        <div class="success-msg" id="success-msg">&#10003; Thank you — Sean will be in touch within one business day.</div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-logo">My Legacy Management</div>
+    <div>3186 Vista Way, Suite 312 &middot; Oceanside, CA 92056</div>
+    <div><a href="tel:+18587643873">(858) 764-3873</a> &middot; <a href="mailto:info@mylegacymanagement.com">info@mylegacymanagement.com</a></div>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+    <div class="foot-lic">&copy; 2026 My Legacy Management &mdash; Sean Vargas, CA Insurance License #0M17715<br>
+    Serving San Diego, Orange &amp; Riverside Counties &middot; Not affiliated with Medicare or any government agency.</div>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(e => {
+  e.forEach(x => { if(x.isIntersecting){ x.target.classList.add('vis'); obs.unobserve(x.target) }})
+}, { threshold: .08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(e => obs.observe(e));
+document.querySelector('.menu-btn')?.addEventListener('click', () => document.querySelector('.nav-links')?.classList.toggle('open'));
+
+document.getElementById('contact-form').addEventListener('submit', e => {
+  e.preventDefault();
+  const btn = e.target.querySelector('.submit-btn');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  setTimeout(() => {
+    btn.style.display = 'none';
+    document.getElementById('success-msg').style.display = 'block';
+  }, 800);
+});
+</script>
+</body>
+</html>
