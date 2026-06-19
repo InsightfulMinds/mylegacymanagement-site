@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Navy to gold gradient background -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2840;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8c679;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#grad)"/>
+
+  <!-- Decorative shield accent (top right) -->
+  <g opacity="0.15">
+    <path d="M 1000 50 L 1150 100 L 1150 250 C 1150 350 1000 450 1000 450 C 1000 450 850 350 850 250 L 850 100 Z" fill="none" stroke="#c9a84c" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Gold accent bar -->
+  <rect x="0" y="280" width="1200" height="3" fill="url(#accentGrad)"/>
+
+  <!-- Main text -->
+  <text x="60" y="200" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#f0f0f0" letter-spacing="-2">
+    My Legacy
+  </text>
+  <text x="60" y="280" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#c9a84c" letter-spacing="-2">
+    Management
+  </text>
+
+  <!-- Tagline -->
+  <text x="60" y="360" font-family="Inter, sans-serif" font-size="28" fill="rgba(240,240,240,0.8)" letter-spacing="1">
+    Estate Planning • Medicare • Life Insurance
+  </text>
+
+  <!-- Location -->
+  <text x="60" y="410" font-family="Inter, sans-serif" font-size="18" fill="rgba(240,240,240,0.5)">
+    Southern California | License #0M17715
+  </text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Navy background -->
+  <rect width="64" height="64" fill="#0a1628" rx="12"/>
+  <!-- Shield outline -->
+  <path d="M 32 8 L 48 14 L 48 28 C 48 40 32 52 32 52 C 32 52 16 40 16 28 L 16 14 Z" fill="none" stroke="#c9a84c" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Gold MLM monogram inside shield -->
+  <text x="32" y="36" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#c9a84c" text-anchor="middle" dominant-baseline="middle">MLM</text>
+</svg>
