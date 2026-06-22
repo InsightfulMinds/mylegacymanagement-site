@@ -179,6 +179,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;o
           <label for="message">Questions or comments</label>
           <textarea id="message" name="message" placeholder="Tell me a bit about your situation..."></textarea>
         </div>
+        <input type="text" name="company_website" id="company_website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;opacity:0;height:0;width:0;pointer-events:none">
         <button type="submit" class="submit-btn">Send Message</button>
         <p class="form-note">Your information is never sold or shared with third parties.</p>
         <div class="success-msg" id="success-msg">&#10003; Thank you — Sean will be in touch within one business day.</div>
@@ -214,13 +215,50 @@ document.querySelector('.menu-btn')?.addEventListener('click', () => document.qu
 
 document.getElementById('contact-form').addEventListener('submit', e => {
   e.preventDefault();
-  const btn = e.target.querySelector('.submit-btn');
+  const form = e.target;
+  const btn = form.querySelector('.submit-btn');
   btn.disabled = true;
   btn.textContent = 'Sending...';
-  setTimeout(() => {
-    btn.style.display = 'none';
-    document.getElementById('success-msg').style.display = 'block';
-  }, 800);
+
+  const fd = new FormData(form);
+  const interest = (fd.get('interest') || '').toString().trim();
+  const note = (fd.get('message') || '').toString().trim();
+  const payload = {
+    name: (fd.get('name') || '').toString().trim(),
+    email: (fd.get('email') || '').toString().trim(),
+    phone: (fd.get('phone') || '').toString().trim(),
+    message: interest ? ('Interest: ' + interest + (note ? '\n\n' + note : '')) : note,
+    source: 'website',
+    page_url: location.href,
+    company_website: (fd.get('company_website') || '').toString() // honeypot — must stay empty
+  };
+
+  fetch('https://crm.seanvargas.com/api/webhooks/lead-capture', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+    .then(r => r.json().catch(() => ({})).then(j => ({ ok: r.ok, j })))
+    .then(res => {
+      if (!res.ok) throw new Error((res.j && res.j.error) || 'submit failed');
+      btn.style.display = 'none';
+      document.getElementById('success-msg').style.display = 'block';
+    })
+    .catch(err => {
+      btn.disabled = false;
+      btn.textContent = 'Send Message';
+      let er = document.getElementById('form-error');
+      if (!er) {
+        er = document.createElement('div');
+        er.id = 'form-error';
+        er.className = 'success-msg';
+        er.style.display = 'block';
+        er.style.borderColor = 'rgba(220,80,80,.4)';
+        form.appendChild(er);
+      }
+      er.textContent = 'Sorry — something went wrong. Please call (858) 764-3873 or email info@mylegacymanagement.com.';
+      console.error('lead-capture:', err);
+    });
 });
 </script>
 </body>
